@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /demo1
+
+jdbc:
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/springbootmybatisdemo?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+  username: root
+  password: 123456
+
+mybatis_config_file: SqlMapConfig.xml
+mapper_path: /mapper/**.xml
+pojo_package: cn.lastlysly.pojo
